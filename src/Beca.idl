@@ -1,0 +1,14 @@
+module beca{
+	struct Llistado{
+	long long numListado;
+	string  dateListado;
+	double valAction;
+	string codeSociety;
+	};
+	
+	typedef sequence<Llistado> cots;
+	interface Beca{
+		cots getListado(in string cs);
+		double getPromedioListado(in string cs);
+	};
+};
